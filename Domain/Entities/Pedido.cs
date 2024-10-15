@@ -10,8 +10,8 @@ namespace Practica_1_P2.Domain.Entities
 
         public int Id_Pedido { get; set; }
         public int UsuarioID { get; set; }
-        // Usar array de enteros para almacenar los IDs de los productos
-        [Column(TypeName = "json")] // Se almacena como JSON en la base de datos
+        
+        [Column(TypeName = "json")] 
         public int[] Productos { get; set; }
     }
 }
