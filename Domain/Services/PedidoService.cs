@@ -48,7 +48,7 @@ namespace Practica_1_P2.Domain.Services
             }
 
             // Actualizar campos del pedido existente
-            pedidoExistente.Productos = pedido.Productos;
+            pedidoExistente.UsuarioID = pedido.UsuarioID;
        
 
             await _context.SaveChangesAsync();

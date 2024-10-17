@@ -7,7 +7,7 @@ namespace Practica_1_P2.Domain.Entities
     public class Producto
     {
         [Key]
-
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id_Producto { get; set; }
         public string Nombre { get; set; }
         public int Precio { get; set; }

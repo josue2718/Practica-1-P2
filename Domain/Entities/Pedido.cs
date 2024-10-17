@@ -11,7 +11,5 @@ namespace Practica_1_P2.Domain.Entities
         public int Id_Pedido { get; set; }
         public int UsuarioID { get; set; }
         
-        [Column(TypeName = "json")] 
-        public int[] Productos { get; set; }
     }
 }

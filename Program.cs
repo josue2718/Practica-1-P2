@@ -18,6 +18,8 @@ builder.Services.AddScoped<IProductoRepository, ProductoService>();
 // Registro del repositorio (Asegúrate de que tienes una implementación de IPedidoRepository)
 builder.Services.AddScoped<IPedidoRepository, PedidoService>(); // Cambia IPedidoRepository por la clase que implementa la interfaz
 builder.Services.AddScoped<IUsuarioRepository, UsuarioService>();
+builder.Services.AddScoped<IPedidoProdRepository, PedidoProductosService>();
+
 // Configuración de controladores y JSON
 builder.Services.AddControllers().AddNewtonsoftJson();
 
